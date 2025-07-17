@@ -1,1 +1,52 @@
-...
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お問い合わせ | ソフィオ株式会社</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="img/logo.png" alt="ソフィオ株式会社ロゴ" class="logo-img" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="services.html">事業内容</a></li>
+          <li><a href="recruit.html">採用情報</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <h1>お問い合わせ</h1>
+
+    <p class="lead">ご不明点やご相談は、以下のフォームよりお気軽にお問い合わせください。</p>
+    <form action="https://formspree.io/f/manbyljp" method="POST" class="contact-form">
+      <label for="company">貴社名（必須）</label>
+      <input type="text" id="company" name="会社名" required />
+      <label for="name">お名前（必須）</label>
+      <input type="text" id="name" name="お名前" required />
+      <label for="email">メールアドレス（必須）</label>
+      <input type="email" id="email" name="メールアドレス" required />
+      <label for="tel">お電話番号（任意）</label>
+      <input type="tel" id="tel" name="電話番号" inputmode="numeric" />
+      <label for="message">お問い合わせ内容（必須）</label>
+      <textarea id="message" name="お問い合わせ内容" rows="5" required></textarea>
+      <button type="submit" class="cta-button">送信する</button>
+    </form>
+
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 ソフィオ株式会社</p>
+    </div>
+  </footer>
+</body>
+</html>
